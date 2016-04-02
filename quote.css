@@ -1,55 +1,155 @@
+html,
 body {
-  background-color: #009688;
-  color: #009688;
-  font-family: 'Roboto';
-  font-weight: 400;
-  on-load: set();
+  font-family: 'Oswald', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
-.quotebox {
-  background-color: white;
-  margin: 15% 25% 5% 25%;
-  border-radius: 5px;
-  width: 50%;
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+#content {
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+  left: 0;
+  width: 100%;
+}
+
+#quoteBox {
+  height: 300px;
+  width: 600px;
+  background-color: rgba(0,0,0,.5);
+  margin: auto;
+}
+
+#left {
+  display: inline;
+  background-color: rgba(204,204,204);
+  height: 100%;
+  width: 40%;
+  float: left;
+}
+
+#right {
+  height: 100%;
+  width: 60%;
+  background-color: rgba(230,230,230, .25);
+  float: right;
+}
+
+#textArea {
+  height: 250px;
+}
+
+#buttons {
+  height: 50px;
+}
+
+#left > img {
+  height: 280px;
+  width: 220px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#textArea > h2 {
+  font-family: 'Passion One', cursive;
+  font-size: 100px;
+  color: rgba(255,255,255, .5);
+}
+
+#beginQuote {
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+#endQuote {
+  text-align: right;
+  margin-top: -25px;
+  margin-right: 10px;
+}
+
+#person {
+  text-align: right;
+  margin-top: -130px;
+  margin-right: 50px;
 }
 
 #quote {
+  margin-top: -140px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  color: rgba(255,255,255,.5);
+  margin-top: 10px;
+  
+}
+
+.btn:hover {
+  color: #666666;
+}
+
+#twitterBtn {
+  margin-left: 10px;
+}
+
+#genQuote {
+  margin-top: -60px;
+  background-color: #333333;
+  height: 30px;
+  width: 130px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: 11px;
+}
+
+#genQuote > h6 {
+  color: #e6e6e6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
   text-align: center;
-  margin-top: 1em;
-  font-size: 3em;
+  padding-top: 7px;
 }
 
-.button {
-  margin: 2em 1em 2em 1em;
-  background-color: #009688;
-  color: white;
-  cursor:pointer;
-  min-width: 5%;
-   &:hover {
-     opacity:0.9;
-     color: white;
-    }
+a {
+  text-decoration: none;
 }
 
-#tweet-quote, #fb-quote {
-  float: left;
-  width: 8%;
+h5 a {
+  color: #333333;
 }
 
-#new {
-  width: 8%;
-  float: right;
-  margin-bottom: 1em;
+h5 a span {
+  position: relative;
+  top: -2px;
+  color: #333333;
 }
 
-.footer {
-  text-align:center;
-  margin-left : auto;
-  margin-right: auto;
-  font-size: 1em;
-  color: white;
-  a {
-    font-weight:500;
-    color: white;
-    text-decoration: none;
+#genQuote:hover,
+#genQuote > h6:hover {
+  background-color: #666666;
+  border-radius: 10px;
+}
+
+#content > h5 {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: .25;
+}
+
+.border {
+  border: 2px solid green;
 }
