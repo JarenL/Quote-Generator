@@ -8,7 +8,7 @@ body {
 
 .quotebox {
   background-color: white;
-  margin: 25% 25% 5% 25%;
+  margin: 15% 25% 5% 25%;
   border-radius: 5px;
   width: 50%;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 .button {
-  margin: 2em 1em 1em 1em;
+  margin: 2em 1em 2em 1em;
   background-color: #009688;
   color: white;
   cursor:pointer;
@@ -37,15 +37,15 @@ body {
 }
 
 #new {
+  width: 8%;
   float: right;
+  margin-bottom: 1em;
 }
 
 .footer {
-  width: 20%;
   text-align:center;
   margin-left : auto;
   margin-right: auto;
-  margin-bottom: 20%;
   font-size: 1em;
   color: white;
   a {
