@@ -1,5 +1,5 @@
 var quotes = [[" Henry Ward Beecher", "Hold yourself responsible for a higher standard than anybody expects of you. Never excuse yourself."], [" Napoleon Bonaparte", "Glory is fleeting, but obscurity is forever."], [" Bertrand Russell", "The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts."]];
-var colors = ['#16a085', '#27ae60', '#2c3e50']
+var colors = ['#d32f2f', '#C2185B', '#7B1FA2'];
 
 document.onload = set();
 
