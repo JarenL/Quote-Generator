@@ -4,13 +4,14 @@ var colors = ['#d32f2f', '#C2185B', '#7B1FA2'];
 document.onload = set();
 
 function set() {
-  var count = Math.floor(Math.random()*quotes.length);
-  document.getElementById("quote").innerHTML = quotes[count][1];
-  document.getElementById("wik").innerHTML = quotes[count][0];
-  document.getElementsByClassName("button")[0].style.backgroundColor = colors[count];
-  document.getElementsByClassName("button")[1].style.backgroundColor = colors[count];
-  document.getElementsByClassName("button")[2].style.backgroundColor = colors[count];
-  document.getElementsByClassName("button")[3].style.backgroundColor = colors[count];
-  document.body.style.backgroundColor = colors[count];
-  document.body.style.color = colors[count];
+  var quote_count = Math.floor(Math.random()*quotes.length);
+  var color_count = Math.floor(Math.random()*colors.length);
+  document.getElementById("quote").innerHTML = quotes[quote_count][1];
+  document.getElementById("wik").innerHTML = quotes[quote_count][0];
+  document.getElementsByClassName("button")[0].style.backgroundColor = colors[color_count];
+  document.getElementsByClassName("button")[1].style.backgroundColor = colors[color_count];
+  document.getElementsByClassName("button")[2].style.backgroundColor = colors[color_count];
+  document.getElementsByClassName("button")[3].style.backgroundColor = colors[color_count];
+  document.body.style.backgroundColor = colors[color_count];
+  document.body.style.color = colors[color_count];
 }
