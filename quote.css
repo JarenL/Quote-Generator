@@ -9,12 +9,18 @@ body {
   background-color: white;
   margin: 25% 25% 5% 25%;
   border-radius: 5px;
-  width: 50%;
+  width: 50%;'
 }
 
 #quote {
   text-align: center;
   font-size: 2em;
+  padding-top: 1em;
+}
+
+#author {
+  text-align: center;
+  font-size: 1em;
 }
 
 .buttons {
@@ -25,16 +31,15 @@ body {
   color: white;
 }
 
-#tweet-quote, #fb-quote {
+.social {
   float: left;
-}
-
-#fb_quote {
-  margin-left: 2em;
+  margin-left: 1em;
+  width: 5%;
 }
 
 #new {
   float: right;
+  margin-bottom: 1em;
 }
 
 .footer {
@@ -52,4 +57,5 @@ body {
 
 .footer a:hover {
   text-decoration: none;
+  color:black;
 }
