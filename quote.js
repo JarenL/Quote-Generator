@@ -14,16 +14,18 @@ var colors = ['#F44336', '#E91E63', '#7B1FA2', "#1A237E", "#90CAF9", "#1DE9B6", 
 
 document.onload = set();
 function set() {
-  var quoteSet = Math.floor(Math.random()*quotes.length);
-  var colorSet = Math.floor(Math.random()*colors.length);
-  document.getElementById("quote").innerHTML = quotes[quoteSet][1];
-  document.getElementById("author").innerHTML = "- " + quotes[quoteSet][0];
-  document.getElementById("wiki").href = quotes[quoteSet][2];
-  document.getElementById("pic").href = quotes[quoteSet][3];
-  document.getElementsByClassName("btn")[0].style.backgroundColor = colors[colorSet];
-  document.getElementsByClassName("btn")[1].style.backgroundColor = colors[colorSet];
-  document.getElementsByClassName("btn")[2].style.backgroundColor = colors[colorSet];
-  document.getElementsByClassName("btn")[3].style.backgroundColor = colors[colorSet];
-  document.body.style.backgroundColor = colors[colorSet];
-  document.body.style.color = colors[colorSet];
+	var quoteSet = Math.floor(Math.random()*quotes.length);
+	var colorSet = Math.floor(Math.random()*colors.length);
+	document.getElementById("quote").innerHTML = quotes[quoteSet][1];
+	document.getElementById("pic").src = "https://upload.wikimedia.org/wikipedia/commons/b/b8/C%C3%A9sar_%2813667960455%29.jpg";
+	document.getElementById("author").innerHTML = "- " + quotes[quoteSet][0];
+	document.getElementById("wiki").href = quotes[quoteSet][2];
+	document.getElementById("tweet-quote").href = "https://twitter.com/intent/tweet?text=" + quotes[quoteSet][1] + "- " + quotes[quoteSet][0];
+	document.getElementById("fb-quote").href = "https://www.facebook.com/";
+	document.getElementsByClassName("btn")[0].style.backgroundColor = colors[colorSet];
+	document.getElementsByClassName("btn")[1].style.backgroundColor = colors[colorSet];
+	document.getElementsByClassName("btn")[2].style.backgroundColor = colors[colorSet];
+	document.getElementsByClassName("btn")[3].style.backgroundColor = colors[colorSet];
+	document.body.style.backgroundColor = colors[colorSet];
+	document.body.style.color = colors[colorSet];
 };
