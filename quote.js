@@ -30,6 +30,7 @@ function set() {
 	document.getElementById("tweet-quote").href = "https://twitter.com/intent/tweet?text=" + pageSet.quote + "- " + pageSet.author;
 	document.getElementById("fb-quote").href = "https://www.facebook.com/";
 	document.body.style.backgroundColor = pageSet.color;
+	document.body.style.color = pageSet.color;
 	for (var i = 0; i < 4; i++){
 		document.getElementsByClassName("btn")[i].style.backgroundColor = pageSet.color;
 	}
