@@ -12,7 +12,6 @@ var quotes = [
 ];
 var colors = ['#F44336', '#E91E63', '#7B1FA2', "#1A237E", "#90CAF9", "#1DE9B6", "#8BC34A", "#9E9E9E", "#607D8B", "#FF6E40"];
 
-document.onload = set();
 function set() {
 	var quoteSet = Math.floor(Math.random()*quotes.length);
 	var colorSet = Math.floor(Math.random()*colors.length);
@@ -29,3 +28,5 @@ function set() {
 	document.body.style.backgroundColor = colors[colorSet];
 	document.body.style.color = colors[colorSet];
 };
+document.onload = set();
+document.getElementById("new").onclick = set();
